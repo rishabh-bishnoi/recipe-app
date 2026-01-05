@@ -1,70 +1,47 @@
 # Forkify
 
-A recipe search application built with vanilla JavaScript.
+A recipe search application with a focus on clear structure, predictable state, and maintainable JavaScript.
 
-This project focuses on **structure, data flow, and maintainability** rather than UI frameworks or abstractions.
-
----
-
-## Overview
-
-Forkify allows users to:
-
-- Search recipes from an external API  
-- View detailed recipe information  
-- Update servings dynamically  
-- Bookmark recipes  
-- Persist state across sessions  
-
-The goal was not speed of development, but **clarity of architecture**.
+🔗 **Live demo**  
+https://forkify-rishabh.netlify.app
 
 ---
 
-## Architecture
+## Features
 
-The app follows a strict **MVC pattern**:
-
-- **Model**  
-  Handles state, API communication, and business logic
-
-- **View**  
-  Responsible for rendering and DOM updates
-
-- **Controller**  
-  Coordinates application flow and user interactions
-
-Each part has a single responsibility.  
-Nothing knows more than it needs to.
+- Search recipes from a public API
+- Detailed recipe view with ingredients and instructions
+- Dynamic servings adjustment
+- Bookmark recipes with persistence
+- Paginated search results
 
 ---
 
-## Tech
+## Tech Stack
 
 - JavaScript (ES6+)
-- HTML
-- SCSS
 - Parcel
-- Public recipes API
-
-No frameworks. No magic.
-
----
-
-## Why this project exists
-
-This project exists to:
-
-- Practice real state management without libraries  
-- Understand async JavaScript deeply  
-- Build a non-trivial app without hiding complexity  
-- Write code that can be reasoned about months later  
-
-It is intentionally not “clever”.
+- SCSS
+- REST API
+- Netlify
 
 ---
 
-## Running locally
+## Design Approach
 
-```bash
-npm install
-npm start
+- Explicit data flow and centralized state
+- Separation of concerns using MVC-style architecture
+- Minimal DOM updates for better performance
+- Readability and long-term maintainability over clever abstractions
+
+---
+
+## Deployment
+
+The application is bundled using Parcel and deployed on Netlify.
+
+---
+
+## Live
+
+👉 https://forkify-rishabh.netlify.app
